@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- 
+Front End
+---- */
+
+.navbar-toggler {
+  border: none;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: black;
+}
+.navbar a:hover {
+  background-color: #f8f9fa;
+  transition: all ease-out 300ms;
+}
+
+.navbar-nav li:last-child {
+  display: none;
+}
+.topbar p {
+  margin-bottom: 0;
+}
+.topbar a {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 12px;
+}
+
+/*  */
+.produk-front {
+  overflow-x: auto;
+  display: flex;
+  background-color: aqua;
+}
+.produk-front .card-produk {
+  width: 18rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.produk-front .card-produk .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0;
+  margin-top: 20px;
+}
+/*  */
+
+.footer .foot-item a {
+  padding: 5px;
+  margin: 1px;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  transition: all ease-in 250ms;
+}
+.footer .foot-item a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* ---- 
+Back End
+---- */
+.sidebar {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 250px;
+  height: 100%;
+  transform: translateX(-195px);
+  transition: all ease-in-out 500ms;
+}
+#side-btn {
+  cursor: pointer;
+  float: right;
+}
+
+.sidebar .list-item {
+  font-size: 18px;
+  margin: 5px 25px;
+  list-style: none;
+}
+.sidebar .list-item a {
+  color: black;
+  text-decoration: none;
+}
+.sidebar .list-item a:hover {
+  color: #6c757d;
+}
+.sidebar i {
+  width: 25px;
+  margin: 0 10px;
+}
+
+.content {
+  display: block;
+  width: 94%;
+  margin-left: 70px;
+  transition: all ease-in-out 600ms;
+}
+.produk .table {
+  width: 90%;
+}
+.produk .table td {
+  vertical-align: middle;
+}
+.produk ul {
+  display: none;
+}
+
+@media (max-width: 970.98px) {
+  /* ---- 
+Untuk Mobile
+Front End
+---- */
+  * {
+    font-size: 12px;
+  }
+  #icon:hover {
+    color: #007bff;
+  }
+  .navbar {
+    text-align: center;
+  }
+  .nav-item > .nav-link:hover {
+    background-color: #f8f9fa;
+  }
+  .navbar-nav li:last-child {
+    display: block;
+  }
+  .navbar .collapse .cari {
+    display: none;
+  }
+  .content {
+    display: block;
+    width: 90%;
+    margin-left: 40px;
+    transition: all ease-in-out 600ms;
+  }
+  /* ---- 
+Back End
+---- */
+  .sidebar {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 190px;
+    height: 100%;
+    transform: translateX(-160px);
+    transition: all ease-in-out 600ms;
+  }
+  #side-btn {
+    cursor: pointer;
+    float: right;
+  }
+  .sidebar i {
+    margin: 0 0;
+    margin-right: -3px;
+  }
+
+  .produk .table {
+    display: none;
+  }
+  .produk ul {
+    display: block;
+  }
+}
+@media (max-width: 420px) {
+  .content {
+    display: block;
+    width: 85%;
+    margin-left: 40px;
+    transition: all ease-in-out 600ms;
+  }
+}
