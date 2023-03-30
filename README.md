@@ -7,7 +7,7 @@
 - Enjoy
 
 # Disclaimer 
-Copyright© 2022 by Grup 6 
-This Repo all made by Musketeer
+Copyright© 2022 by Group 6 
+This Repo all made by Musketeer AKA Azfa
 Please keep this text for attribution 
 All right reserved
